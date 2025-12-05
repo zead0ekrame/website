@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الأنشطة للأطفال</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="video-container">
+                <video id="heroVideo" controls autoplay playsinline width="100%" style="max-width: 600px; height: auto; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                    <source src="media/WhatsApp Video 2025-12-04 at 12.20.52 AM.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+                <button id="unmuteBtn" style="display:none; margin-top:10px;">🔊 تشغيل الصوت</button>
+            </div>
+
+            <div class="header">
+                <h1>🎮 أنشطتي المرحة 🎨</h1>
+                <p>اختر النشاط الذي تحب وابدأ اللعب والتعلم!</p>
+            </div>
+
+            <div class="hero-start" style="text-align:center; margin: 18px 0 24px;">
+                <a class="start-button" href="activities.html?a=0">
+                    <span class="start-icon">🚀</span>
+                    <span class="start-text">ابدأ الرحلة الآن</span>
+                </a>
+            </div>
+
+            <!-- Activity content appears here when started -->
+            <div id="activityContent" style="display:none;"></div>
+
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">🎯</div>
+                    <div class="activity-title">السلوك الصحيح</div>
+                    <div class="activity-description">اختر السلوك الصحيح من الصورتين - 3 أسئلة</div>
+                    <a class="activity-button" href="activities.html?a=0">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">⏰</div>
+                    <div class="activity-title">الروتين اليومي</div>
+                    <div class="activity-description">رتب خطوات الروتين اليومي بالترتيب الصحيح</div>
+                    <a class="activity-button" href="activities.html?a=1">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🚿</div>
+                    <div class="activity-title">خطوات الاستحمام</div>
+                    <div class="activity-description">رتب خطوات الاستحمام — 5 صور</div>
+                    <a class="activity-button" href="activities.html?a=2">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🧼</div>
+                    <div class="activity-title">غسل اليدين</div>
+                    <div class="activity-description">رتب خطوات غسل اليدين بالترتيب الصحيح</div>
+                    <a class="activity-button" href="activities.html?a=3">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">💇‍♀️</div>
+                    <div class="activity-title">تمشيط الشعر</div>
+                    <div class="activity-description">رتب خطوات تمشيط الشعر — صور</div>
+                    <a class="activity-button" href="activities.html?a=4">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🍎</div>
+                    <div class="activity-title">غسل الفواكه</div>
+                    <div class="activity-description">شاهد فيديو ثم رتب خطوات غسل الفواكه</div>
+                    <a class="activity-button" href="activities.html?a=5">ابدأ الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Try to autoplay hero video with sound. If blocked, autoplay muted and show a button to enable sound.
+        (function(){
+            const v = document.getElementById('heroVideo');
+            const btn = document.getElementById('unmuteBtn');
+            if (!v) return;
+            v.volume = 1.0;
+            v.muted = false;
+            const tryPlay = async () => {
+                try {
+                    await v.play();
+                    // if played but still muted by UA, check muted state
+                    if (v.paused || v.muted) throw new Error('autoplay-muted');
+                } catch (e) {
+                    // fallback: autoplay muted, show unmute button
+                    v.muted = true;
+                    try { await v.play(); } catch (e) {}
+                    if (btn) {
+                        btn.style.display = 'inline-block';
+                        btn.addEventListener('click', async () => {
+                            try {
+                                v.muted = false;
+                                v.volume = 1.0;
+                                await v.play();
+                                btn.style.display = 'none';
+                            } catch (err) {
+                                // still blocked — keep button visible
+                                console.warn('Unable to unmute autoplay', err);
+                            }
+                        });
+                    }
+                }
+            };
+            // If autoplay was blocked / muted by UA, allow first user interaction to unmute
+            const onUserGesture = async () => {
+                try {
+                    if (v && v.muted) {
+                        v.muted = false;
+                        v.volume = 1.0;
+                        await v.play().catch(() => {});
+                        if (btn) btn.style.display = 'none';
+                    }
+                } catch (err) {
+                    console.warn('User gesture unmute failed', err);
+                }
+                document.removeEventListener('click', onUserGesture);
+                document.removeEventListener('touchstart', onUserGesture);
+            };
+            document.addEventListener('click', onUserGesture, {passive:true});
+            document.addEventListener('touchstart', onUserGesture, {passive:true});
+            document.addEventListener('DOMContentLoaded', tryPlay);
+            // also try shortly after load
+            setTimeout(tryPlay, 600);
+        })();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

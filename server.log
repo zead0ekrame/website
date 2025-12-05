@@ -1,0 +1,1232 @@
+nohup: ignoring input
+127.0.0.1 - - [05/Dec/2025 06:41:24] "HEAD / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:41:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:41:34] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:41:36] "GET / HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 54136)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 06:42:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:42:10] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:42:14] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 06:42:14] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 06:42:18] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:42:18] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 36492)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 06:45:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:45:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:45:29] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40512)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 06:49:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:57:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 06:57:57] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37912)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:25:12] "GET /?id=10f2953f-9903-40d8-8a3b-eed43d3b5dc9&vscodeBrowserReqId=1764919512859 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:13] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:13] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:13] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:41] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:41] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:44] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:25:50] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:25:50] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37472)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:26:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:27:59] "GET /?id=10f2953f-9903-40d8-8a3b-eed43d3b5dc9&vscodeBrowserReqId=1764919679655 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 44898)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+127.0.0.1 - - [05/Dec/2025 09:27:59] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:28:18] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:28:18] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:28:30] "GET / HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46142)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:28:31] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42842)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56772)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:40:43] "GET /?id=10f2953f-9903-40d8-8a3b-eed43d3b5dc9&vscodeBrowserReqId=1764920443952 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:40:44] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:40:44] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:40:44] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:05] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:05] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:05] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46304)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:43:25] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(2).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:25] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(1).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:30] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(3).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:30] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(2).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(8).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(6).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(7).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(8).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(5).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(9).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(6).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:43:34] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(7).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:46:16] "GET /?id=10f2953f-9903-40d8-8a3b-eed43d3b5dc9&vscodeBrowserReqId=1764920776173 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51498)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:46:16] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:46:16] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:46:16] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:48:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:48:35] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:48:35] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:48:35] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:48:40] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:48:40] "GET /app.js HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57838)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:51:33] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:51:33] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:51:33] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:51:43] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:51:43] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:51:43] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:52:36] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:52:37] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:52:37] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:52:42] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:52:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:52:55] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:52:55] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:52:57] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:53:06] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:53:07] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:53:07] "GET /app.js HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51798)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:53:07] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:53:07] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:53:13] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:53:13] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:53:29] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:53:29] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:53:29] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:02] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:54:02] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:02] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:03] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:54:04] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 09:54:04] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 09:54:07] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:07] "GET /styles.css HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35800)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:54:13] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:13] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:17] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(3).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:17] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:21] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:54:21] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(5).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:12] "GET /activities.html?a=1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:56:12] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:56:12] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:56:23] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:56:30] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:30] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:56:30] "GET /app.js HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34788)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:56:41] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(9).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 09:58:03] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:58:08] "GET /activities.html?a=1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:58:08] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 09:58:08] "GET /app.js HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42012)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 10:02:17] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:02:18] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:02:18] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:02:37] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:02:37] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:04:59] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:04:59] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:04:59] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:09:27] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:09:27] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:09:27] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:18:06] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:18:06] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:18:06] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:18:06] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(5).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:18:06] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:19] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:19] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:20:19] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(9).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:20:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:03] "GET /activities.html?a=1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:58:03] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:03] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(9).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(5).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 10:58:07] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45612)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 11:01:56] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:01:56] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:01:56] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:09:17] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:09:25] "GET /index.html HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60288)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 11:09:25] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:09:25] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:09:25] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:11:20] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:20] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:20] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:20] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:38] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(3).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:11:38] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:13:24] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(3).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:13:24] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:13:24] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(2).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:13:24] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(1).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:13:24] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(4).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:18] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.53%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:18] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.52%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:18] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.53%20PM%20(1).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:18] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:47] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM%20(4).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:47] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:47] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM%20(3).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:47] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM%20(6).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:15:47] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM%20(5).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:16:14] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:16:14] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 11:16:14] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 11:16:19] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(3).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:16:19] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:16:19] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.55%20PM%20(1).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:16:19] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(4).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:21:04] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:21:04] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:21:04] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:21:06] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:21:07] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 11:21:07] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 11:21:11] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:22:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:22:04] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 39774)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 11:36:25] "GET /?id=50733345-67fe-474e-a6d7-9620bae128de&vscodeBrowserReqId=1764927384958 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:36:25] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:36:25] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:36:25] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:37:51] "GET /?id=f1178f2b-9fa7-48ef-b3da-267e476bbe4a&vscodeBrowserReqId=1764927471554 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:37:51] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:38:20] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:38:20] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:38:20] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:38:20] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:38:37] "GET /activities.html?a=5 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:38:38] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 11:38:38] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 11:57:45] "GET /activities.html?a=5 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:45] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:57:45] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:47] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:47] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:47] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:47] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:57:49] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.51%20AM.mp4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 11:58:05] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:58:05] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:58:09] "GET /index.html HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58280)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 11:58:09] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 11:58:15] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 11:58:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 11:58:21] "GET /activities.html?a=0 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 58302)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 11:58:22] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 11:58:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:42:27] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:42:32] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:42:32] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:42:49] "GET /index.html HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 51914)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 12:42:49] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:49] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:49] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:42:54] "GET /activities.html?a=0 HTTP/1.1" 304 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 39078)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:42:55] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:42:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:43:15] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:43:15] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:45:00] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:45:04] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:47:17] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:47:17] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:49:48] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:48] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:49:53] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:54] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:54] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:54] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:54] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:49:54] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:49:54] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:50:25] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(3).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:25] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.50%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(5).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(9).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(6).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.56%20PM%20(8).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:50:33] "GET /WhatsApp%20Image%202025-12-04%20at%208.21.57%20PM%20(7).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:21] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:21] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:57:21] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 12:57:24] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:25] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:25] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:25] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:25] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:57:25] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:57:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 12:59:26] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:59:26] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:59:26] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 12:59:29] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 12:59:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:01:52] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:01:52] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:01:54] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:01:54] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:04:05] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:04:06] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:04:06] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:04:10] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:04:11] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:04:11] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:05:57] "GET /media/WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:11] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:12] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:07:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:07:20] "GET /activities.html?a=1 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:07:20] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:21] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:07:21] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:07:27] "GET /activities.html?a=1 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:27] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:54] "GET /activities.html?a=0 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:54] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:07:55] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:07:55] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:13:20] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(4).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:13:20] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(2).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:13:20] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:13:20] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:13:20] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.51%20PM%20(3).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:27] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM.mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:45] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(1).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:54] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.52%20PM.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:54] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.54%20PM.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:54] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.53%20PM.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:54] "GET /images/WhatsApp%20Image%202025-12-04%20at%208.21.53%20PM%20(1).jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:20:59] "GET /activities.html?a=0 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:20:59] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:20:59] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:21:01] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(3).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:16] "GET /activities.html?a=2 HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 13:21:16] "GET /media/WhatsApp%20Audio%202025-12-04%20at%208.21.50%20PM%20(4).mpeg HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:17] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 13:21:17] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 13:21:24] "GET /activities.html?a=2 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:24] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:24] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:30] "GET /activities.html?a=2 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:21:38] "GET /WhatsApp%20Video%202025-12-04%20at%2012.20.52%20AM.mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37256)
+Traceback (most recent call last):
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 1320, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 436, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 424, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 679, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/http/server.py", line 881, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/shutil.py", line 204, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/home/zead/anaconda3/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+127.0.0.1 - - [05/Dec/2025 13:22:08] "GET /activities.html?a=2 HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:22:08] "GET /styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 13:22:08] "GET /app.js HTTP/1.1" 304 -

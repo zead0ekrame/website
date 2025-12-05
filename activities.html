@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>الأنشطة — الصفحة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="activities-page">
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <h1>🎮 أنشطتي المرحة — الأنشطة</h1>
+                <p>اختر نشاطاً أو انتظر للانتقال مباشرةً إلى النشاط المطلوب.</p>
+            </div>
+
+            <div id="activityContent" style="display:none;"></div>
+
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">🎯</div>
+                    <div class="activity-title">السلوك الصحيح</div>
+                    <div class="activity-description">اختر السلوك الصحيح من الصورتين - 3 أسئلة</div>
+                    <a class="activity-button" href="activities.html?a=0">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">⏰</div>
+                    <div class="activity-title">الروتين اليومي</div>
+                    <div class="activity-description">اختر الصورة الصحيحة للروتين اليومي</div>
+                    <a class="activity-button" href="activities.html?a=1">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🚿</div>
+                    <div class="activity-title">خطوات الاستحمام</div>
+                    <div class="activity-description">رتب خطوات الاستحمام بالترتيب الصحيح — 5 صور</div>
+                    <a class="activity-button" href="activities.html?a=2">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🧩</div>
+                    <div class="activity-title">النشاط الرابع</div>
+                    <div class="activity-description">حل الألغاز وتمرين عقلك الذكي</div>
+                    <a class="activity-button" href="activities.html?a=3">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">📖</div>
+                    <div class="activity-title">النشاط الخامس</div>
+                    <div class="activity-description">اقرأ القصص الجميلة والخيالية</div>
+                    <a class="activity-button" href="activities.html?a=4">ابدأ الآن</a>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🧪</div>
+                    <div class="activity-title">النشاط السادس</div>
+                    <div class="activity-description">جارب التجارب والاكتشافات العلمية</div>
+                    <a class="activity-button" href="activities.html?a=5">ابدأ الآن</a>
+                </div>
+            </div>
+            
+            <div style="margin:30px 0; text-align:center;">
+                <a href="index.html" class="modal-button close">العودة للصفحة الرئيسية</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Hidden audio elements for feedback sounds -->
+    <audio id="correctSound" preload="auto" playsinline webkit-playsinline>
+        <source src="media/WhatsApp Audio 2025-12-04 at 8.21.50 PM.mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="wrongSound" preload="auto" playsinline webkit-playsinline>
+        <source src="media/WhatsApp Audio 2025-12-04 at 8.21.50 PM (1).mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="timerSound" preload="auto" playsinline webkit-playsinline>
+        <source src="WhatsApp Audio 2025-12-04 at 8.21.50 PM (2).mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="sortInstructionSound" preload="auto" playsinline webkit-playsinline>
+        <source src="media/WhatsApp Audio 2025-12-04 at 8.21.50 PM (3).mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="quizStartSound" preload="auto" playsinline webkit-playsinline>
+        <source src="media/WhatsApp Audio 2025-12-04 at 8.21.50 PM (4).mpeg" type="audio/mpeg">
+    </audio>
+</body>
+</html>
