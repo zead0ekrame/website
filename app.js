@@ -380,7 +380,7 @@ function initSort(activity) {
         addDragListeners(el);
     });
 
-    // allow dropping on slots
+    // allow dropping on slots (desktop drag-drop + mobile touch)
     slots.forEach(slot => {
         slot.style.position = 'relative';
         slot.addEventListener('dragover', (e) => e.preventDefault());
@@ -389,6 +389,8 @@ function initSort(activity) {
             const name = e.dataTransfer.getData('text/plain');
             handleSortDrop(activity, slot, name);
         });
+        // Add touch support for mobile
+        addTouchDropZone(slot, activity);
     });
 }
 
@@ -494,6 +496,108 @@ function addDragListeners(wrapper) {
     wrapper.addEventListener('dragend', (e) => {
         wrapper.style.visibility = 'visible';
     });
+    // Also add touch listeners for mobile
+    addTouchListeners(wrapper);
+}
+
+// Mobile touch support for drag and drop
+let touchedElement = null;
+let touchOffset = { x: 0, y: 0 };
+let touchData = { startX: 0, startY: 0, currentX: 0, currentY: 0 };
+let dragOverSlot = null;
+
+function addTouchListeners(wrapper) {
+    wrapper.addEventListener('touchstart', (e) => {
+        touchedElement = wrapper;
+        const touch = e.touches[0];
+        const rect = wrapper.getBoundingClientRect();
+        touchOffset.x = touch.clientX - rect.left;
+        touchOffset.y = touch.clientY - rect.top;
+        touchData.startX = touch.clientX;
+        touchData.startY = touch.clientY;
+        wrapper.style.opacity = '0.6';
+        wrapper.style.zIndex = '1000';
+        wrapper.style.transform = 'scale(1.1)';
+        document.body.style.touchAction = 'none';
+        e.preventDefault();
+    }, false);
+
+    wrapper.addEventListener('touchmove', (e) => {
+        if (touchedElement === wrapper) {
+            const touch = e.touches[0];
+            touchData.currentX = touch.clientX;
+            touchData.currentY = touch.clientY;
+            e.preventDefault();
+        }
+    }, false);
+
+    wrapper.addEventListener('touchend', (e) => {
+        if (touchedElement === wrapper) {
+            wrapper.style.opacity = '1';
+            wrapper.style.zIndex = '1';
+            wrapper.style.transform = 'scale(1)';
+            touchedElement = null;
+            dragOverSlot = null;
+        }
+        document.body.style.touchAction = 'auto';
+        e.preventDefault();
+    }, false);
+}
+
+// Enhanced slot drop detection for touch
+function addTouchDropZone(slot, activity) {
+    slot.addEventListener('touchmove', (e) => {
+        if (touchedElement && e.touches.length > 0) {
+            const touch = e.touches[0];
+            const slotRect = slot.getBoundingClientRect();
+            
+            // Highlight slot if touch is over it
+            if (
+                touch.clientX >= slotRect.left &&
+                touch.clientX <= slotRect.right &&
+                touch.clientY >= slotRect.top &&
+                touch.clientY <= slotRect.bottom
+            ) {
+                if (dragOverSlot !== slot) {
+                    if (dragOverSlot) dragOverSlot.style.backgroundColor = '';
+                    dragOverSlot = slot;
+                    slot.style.backgroundColor = 'rgba(76, 175, 80, 0.2)';
+                }
+            } else {
+                if (dragOverSlot === slot) {
+                    slot.style.backgroundColor = '';
+                    dragOverSlot = null;
+                }
+            }
+        }
+        e.preventDefault();
+    }, false);
+
+    slot.addEventListener('touchend', (e) => {
+        if (touchedElement && e.changedTouches.length > 0) {
+            const touch = e.changedTouches[0];
+            const slotRect = slot.getBoundingClientRect();
+            
+            // Check if touch ended within slot bounds
+            if (
+                touch.clientX >= slotRect.left &&
+                touch.clientX <= slotRect.right &&
+                touch.clientY >= slotRect.top &&
+                touch.clientY <= slotRect.bottom
+            ) {
+                const itemName = touchedElement.getAttribute('data-name');
+                handleSortDrop(activity, slot, itemName);
+            }
+            
+            // Reset slot style
+            if (dragOverSlot === slot) {
+                slot.style.backgroundColor = '';
+                dragOverSlot = null;
+            }
+            touchedElement = null;
+        }
+        e.preventDefault();
+    }, false);
 }
 
 function checkSortCompletion(activity) {
