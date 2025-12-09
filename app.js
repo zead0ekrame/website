@@ -4,6 +4,7 @@ let timerInterval = null;
 let remainingTime = 0;
 let timerSoundInterval = null;
 let sortInstructionSoundPlayed = false;
+const preVideoSeen = {};
 
 // Audio helper functions
 function playSound(soundId) {
@@ -48,12 +49,14 @@ const activities = [
         title: 'السلوك الصحيح',
         description: 'اختر السلوك الصحيح من الصورتين',
         type: 'quiz',
+        preVideo: 'media/WhatsApp Video 2025-12-04 at 12.20.51 AM (1).mp4',
         duration: 120,
         questions: [
             {
                 questionNum: 1,
                 wrong: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (1).jpeg',
-                correct: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (2).jpeg'
+                correct: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (2).jpeg',
+                correctFirst: true
             },
             {
                 questionNum: 2,
@@ -146,11 +149,33 @@ const activities = [
     }
 ];
 
+const teamInfo = {
+    heading: 'كلية التربية للطفوله المبكره (الفرقه الثالثه برنامج تربيه خاصه قسم توحد)',
+    group: 'جروب 6',
+    members: [
+        'حبيبه أحمد محمود أحمد',
+        'بسنت أحمد بدوي',
+        'حبيبة أيمن إبراهيم',
+        'رضوه سعيدأحمد (الليدر)',
+        'زينب محمد الهادي',
+        'مارتينا هاني فكرى',
+        'مريم كامل الصعيدي',
+        'ملك ربيع برل',
+        'هاجر سمير عبد المجيد'
+    ]
+};
+
 function startActivity(index) {
     currentActivityIndex = index;
     const activity = activities[index];
     console.log('Starting activity:', index, activity);
     
+    // If activity has an intro video and it was not shown yet, show it first
+    if (activity.preVideo && !preVideoSeen[index]) {
+        showPreVideo(activity, index);
+        return;
+    }
+
     // mark page as activity view so CSS makes palette horizontal
     document.body.classList.add('activities-page');
 
@@ -182,6 +207,46 @@ function startActivity(index) {
     }
 }
 
+function showPreVideo(activity, index) {
+    const content = document.getElementById('activityContent');
+    const grid = document.querySelector('.activities-grid');
+    if (grid) grid.style.display = 'none';
+    if (!content) return;
+
+    const html = `
+        <div class="modal-icon small">${activity.icon}</div>
+        <div class="modal-title">${activity.title}</div>
+        <div class="modal-description">شاهد هذا الفيديو القصير قبل البدء في النشاط الأول</div>
+        <video id="preActivityVideo" src="${activity.preVideo}" controls style="max-width:100%;border-radius:14px;margin:12px auto;display:block;"></video>
+        <div class="modal-buttons">
+            <button class="modal-button close" onclick="closeActivity()">أغلق</button>
+            <button class="modal-button next" id="startAfterVideo">ابدأ النشاط الآن</button>
+        </div>
+    `;
+
+    content.innerHTML = html;
+    content.style.display = 'block';
+    document.body.classList.add('activities-page');
+
+    const startNow = () => {
+        preVideoSeen[index] = true;
+        const video = document.getElementById('preActivityVideo');
+        if (video && !video.paused) video.pause();
+        startActivity(index);
+    };
+
+    const videoEl = document.getElementById('preActivityVideo');
+    if (videoEl) {
+        videoEl.play().catch(() => {});
+        videoEl.addEventListener('ended', startNow);
+    }
+
+    const startBtn = document.getElementById('startAfterVideo');
+    if (startBtn) {
+        startBtn.addEventListener('click', startNow);
+    }
+}
+
 function showQuiz(activity, questionIndex) {
     // track current question globally so timer expiry can advance
     currentQuestionIndex = questionIndex;
@@ -192,20 +257,29 @@ function showQuiz(activity, questionIndex) {
     }
 
     const question = activity.questions[questionIndex];
+    const options = question.correctFirst
+        ? [
+            { src: question.correct, isCorrect: true, label: 'الخيار الأول' },
+            { src: question.wrong, isCorrect: false, label: 'الخيار الثاني' }
+        ]
+        : [
+            { src: question.wrong, isCorrect: false, label: 'الخيار الأول' },
+            { src: question.correct, isCorrect: true, label: 'الخيار الثاني' }
+        ];
+
+    const optionsHTML = options.map(opt => `
+            <div class="quiz-option" onclick="checkAnswer(this, ${opt.isCorrect}, ${questionIndex})">
+                <img src="${opt.src}" alt="صورة السؤال ${question.questionNum}">
+                <div class="option-label">${opt.label}</div>
+            </div>
+        `).join('');
     
     const quizHTML = `
         <div class="modal-icon small">${activity.icon}</div>
         <div class="modal-title">${activity.title}</div>
         <div class="modal-description">السؤال ${question.questionNum} من 3</div>
         <div class="quiz-images">
-            <div class="quiz-option" onclick="checkAnswer(this, false, ${questionIndex})">
-                <img src="${question.wrong}" alt="خيار خاطئ">
-                <div class="option-label">الخيار الأول</div>
-            </div>
-            <div class="quiz-option" onclick="checkAnswer(this, true, ${questionIndex})">
-                <img src="${question.correct}" alt="خيار صحيح">
-                <div class="option-label">الخيار الثاني</div>
-            </div>
+            ${optionsHTML}
         </div>
         <div class="modal-timer" id="modalTimer"></div>
         <div id="feedback" style="display:none; font-size:1.5em; margin-top:20px; font-weight:bold;"></div>
@@ -740,12 +814,13 @@ function nextActivity() {
     if (currentActivityIndex < activities.length - 1) {
         startActivity(currentActivityIndex + 1);
     } else {
-        closeActivity();
-        alert('🎉 مبروك! انتهيت من جميع الأنشطة! 🎉');
+        closeActivity({ keepGridHidden: true });
+        showTeamPage();
     }
 }
 
-function closeActivity() {
+function closeActivity(options = {}) {
+    const { keepGridHidden = false } = options;
     clearInterval(timerInterval);
     
     // Stop ALL sounds completely
@@ -770,9 +845,11 @@ function closeActivity() {
         content.innerHTML = '';
     }
     const grid = document.querySelector('.activities-grid');
-    if (grid) grid.style.display = 'grid';
-    // remove activity page class so palette returns to normal
-    document.body.classList.remove('activities-page');
+    if (grid) grid.style.display = keepGridHidden ? 'none' : 'grid';
+    // remove activity page class so palette returns to normal (unless keeping the grid hidden for end page)
+    if (!keepGridHidden) {
+        document.body.classList.remove('activities-page');
+    }
 }
 
 function startJourney() {
@@ -803,3 +880,28 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('No auto-start param or URL error', e);
     }
 });
+
+function showTeamPage() {
+    const content = document.getElementById('activityContent');
+    if (!content) return;
+    const membersHTML = teamInfo.members.map((name, idx) => `<li><span class="team-number">${idx + 1} -</span> ${name}</li>`).join('');
+    const html = `
+        <div class="modal-icon small">🌟</div>
+        <div class="modal-title">الفريق المنفذ للمشروع</div>
+        <div class="modal-description team-heading">${teamInfo.heading}</div>
+        <div class="modal-description team-group">${teamInfo.group}</div>
+        <ul class="team-list">${membersHTML}</ul>
+        <div class="modal-buttons">
+            <a class="modal-button close" href="index.html">العودة للرئيسية</a>
+            <button class="modal-button next" onclick="restartJourney()">إعادة الأنشطة</button>
+        </div>
+    `;
+    content.innerHTML = html;
+    content.style.display = 'block';
+    document.body.classList.add('activities-page');
+}
+
+function restartJourney() {
+    Object.keys(preVideoSeen).forEach(k => delete preVideoSeen[k]);
+    startActivity(0);
+}
