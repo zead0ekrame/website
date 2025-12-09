@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريق العمل - الفرقة الثالثة</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .team-page {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+        
+        .team-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .team-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding-top: 30px;
+        }
+        
+        .team-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .team-header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .department-info {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .department-info h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .department-info p {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .group-title {
+            color: #764ba2;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .members-list {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .members-list ol {
+            list-style-position: inside;
+            padding: 0;
+        }
+        
+        .members-list li {
+            color: #333;
+            font-size: 1.1em;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            line-height: 1.6;
+        }
+        
+        .members-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .leader-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .back-button a {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .back-button a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: #f0f0f0;
+        }
+        
+        .decorative-element {
+            display: inline-block;
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body class="team-page">
+    <div class="team-container">
+        <div class="team-header">
+            <h1>
+                <span class="decorative-element">🎓</span>
+                فريق العمل
+                <span class="decorative-element">📚</span>
+            </h1>
+            <p>كلية التربية للطفولة المبكرة</p>
+        </div>
+        
+        <div class="department-info">
+            <h2>📖 معلومات البرنامج</h2>
+            <p><strong>الكلية:</strong> كلية التربية للطفولة المبكرة</p>
+            <p><strong>البرنامج:</strong> برنامج التربية الخاصة - تخصص التوحد</p>
+            <p><strong>الفرقة:</strong> الفرقة الثالثة</p>
+            <p><strong>المجموعة:</strong> المجموعة السادسة (Group 6)</p>
+            
+            <div class="group-title">👥 أعضاء المجموعة (9 طلاب)</div>
+            
+            <div class="members-list">
+                <ol>
+                    <li>حبيبه أحمد محمود أحمد</li>
+                    <li>بسنت أحمد بدوي</li>
+                    <li>حبيبة أيمن إبراهيم</li>
+                    <li>رضوه سعيد أحمد <span class="leader-badge">👑 الليدر</span></li>
+                    <li>زينب محمد الهادي</li>
+                    <li>مارتينا هاني فكرى</li>
+                    <li>مريم كامل الصعيدي</li>
+                    <li>ملك ربيع برل</li>
+                    <li>هاجر سمير عبد المجيد</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="back-button">
+            <a href="index.html">← العودة إلى الصفحة الرئيسية</a>
+        </div>
+    </div>
+</body>
+</html>

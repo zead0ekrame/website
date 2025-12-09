@@ -49,11 +49,12 @@ const activities = [
         description: 'اختر السلوك الصحيح من الصورتين',
         type: 'quiz',
         duration: 120,
+        video: 'media/WhatsApp Video 2025-12-04 at 12.20.51 AM (1).mp4',
         questions: [
             {
                 questionNum: 1,
-                wrong: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (1).jpeg',
-                correct: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (2).jpeg'
+                wrong: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (2).jpeg',
+                correct: 'WhatsApp Image 2025-12-04 at 8.21.54 PM (1).jpeg'
             },
             {
                 questionNum: 2,
@@ -193,7 +194,19 @@ function showQuiz(activity, questionIndex) {
 
     const question = activity.questions[questionIndex];
     
+    // Add video before quiz only for first question of first activity
+    let videoHTML = '';
+    if (currentActivityIndex === 0 && questionIndex === 0 && activity.video) {
+        videoHTML = `
+            <video id="activityVideo" controls style="width:100%; max-width: 500px; height: auto; border-radius: 15px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;">
+                <source src="${activity.video}" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو
+            </video>
+        `;
+    }
+    
     const quizHTML = `
+        ${videoHTML}
         <div class="modal-icon small">${activity.icon}</div>
         <div class="modal-title">${activity.title}</div>
         <div class="modal-description">السؤال ${question.questionNum} من 3</div>
